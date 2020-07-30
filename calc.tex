@@ -1,0 +1,39 @@
+%! Author Crfews
+%! Date 7/30/2020
+
+%Preamble
+\documentclass[12pt]{article}
+\setlength{\parindent}{0em}
+\linespread{1.6}
+\hbadness=99999
+\hfuzz=9999pt
+\title{Spring Quarantine Notes}
+\author{Crfews}
+
+%Packages
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{commath}
+\usepackage{textcomp}
+\usepackage{gensymb}
+%Document
+\begin{document}
+    \maketitle
+    \section{Limits}
+    \subsection{Notation}
+        $$\lim_{x\to\infty} f(x)$$
+    \subsection{Formal Definition of a Limit}
+        $$\lim_{x\to a} f(x) = L \iff \forall \ \varepsilon > 0, \exists \  \delta > 0  \ni\  if \  x \in N_{\delta}(a),\  then\  f(x)\in N_{\varepsilon}(L)$$
+    \subsection{Examples}
+        \(  \lim_{x\to 2} g(x) =
+        \begin{cases}
+                x^{2} &, x\neq 2\\
+                1 &, x = 2\\
+            \end{cases}
+        \) $ = 4$
+    \subsection{Determining Limits using the Squeeze Theorem}
+        $f(x) \leq g(x) \leq h(x)$\newline
+        $\lim_{x\to c} f(x) = L$ and $\lim_{x\to c} h(x) = L$ $\implies$ $\lim_{x\to c} g(x) = L$
+    
+
+\end{document}
